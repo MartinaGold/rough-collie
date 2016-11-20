@@ -1,0 +1,40 @@
+<div class="messages-container">
+	<span class="title-global">Zde nám zanechte vzkaz</span>
+
+	<form class="form-horizontal margin-top">
+		<div class="messages-input-container">
+			<div>
+				<label for="inputName" class="col-sm-2 control-label">Jméno:</label>
+				<div class="col-sm-10">
+					<input id="inputName" class="form-control" type="text" ng-model="message.name"/>
+				</div>
+			</div>
+			<div>
+				<label for="textareaText" class="col-sm-2 control-label">Text vzkazu:</label>
+				<div class="col-sm-10">
+					<textarea id="textareaText" class="form-control" ng-model="message.text"></textarea>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="col-sm-offset-2 col-sm-10 margin-top">
+				<button class="btn" ng-click="addMessage()">Vložit komentář</button>
+			</div>
+		</div>
+	</form>
+
+	<div>
+		<table class="messages-text" ng-repeat="message in messages">
+			<tr>
+				<td>
+					{{message.date}} <strong>{{message.name}}</strong>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				    {{message.text}}
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>

@@ -1,0 +1,121 @@
+.messages-container .messages-text {
+  margin-top: 20px;
+  border-top: 1px solid #cecbcb;
+  width: 500px; }
+
+.messages-container .messages-input-container input {
+  width: 300px; }
+
+.messages-container .messages-input-container textarea {
+  width: 300px !important;
+  height: 150px;
+  margin-top: 10px; }
+
+.dog {
+  font-size: 17px;
+  width: 200px;
+  display: inline-block;
+  margin: 10px;
+  margin-left: 0px; }
+
+body {
+  min-height: 100%; }
+
+.selected {
+  background-color: #cae7e4;
+  width: 140px !important; }
+
+.not-selected {
+  background-color: #F9F9F9; }
+
+.menu {
+  list-style-type: none;
+  font-size: 20px;
+  float: left; }
+  .menu li {
+    width: 125px;
+    margin: 7px;
+    box-shadow: 2px 2px 2px grey;
+    transition: background-color 0.5s ease, width 0.5s;
+    -moz-transition: background-color 0.5s ease, width 0.5s;
+    -webkit-transition: background-color 0.5s ease, width 0.5s;
+    -o-transition: background-color 0.5s ease, width 0.5s; }
+    .menu li:hover {
+      background-color: #cae7e4;
+      width: 140px; }
+    .menu li a {
+      transition: color 0.5s;
+      -moz-transition: color 0.5s;
+      -webkit-transition: color 0.5s;
+      -o-transition: color 0.5s;
+      color: #504C4C;
+      padding: 0 11px 0 23px;
+      height: 30px;
+      line-height: 30px;
+      display: block; }
+      .menu li a:focus, .menu li a:hover {
+        text-decoration: none;
+        color: black; }
+
+.title {
+  font-family: Times-New-Roman, Times, serif;
+  background-color: #4A4A4A;
+  margin-top: 0px;
+  color: whitesmoke;
+  padding: 6px;
+  padding-left: 48px; }
+  .title a {
+    color: white; }
+    .title a:hover, .title a:focus {
+      text-decoration: none; }
+
+#root-container {
+  width: 960px;
+  min-height: 525px; }
+
+.clear {
+  clear: both; }
+
+#footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: #4A4A4A;
+  color: white;
+  padding: 5px 5px 5px 20px; }
+
+.title-home {
+  text-align: center;
+  font-family: Garamond, Times, serif; }
+
+.title-global {
+  font-style: italic;
+  font-size: 20px; }
+
+.margin-top {
+  margin-top: 7px; }
+
+textarea {
+  width: 300px;
+  height: 150px; }
+
+.standard-hover:hover {
+  color: #cae7e4; }
+
+.view-container {
+  margin-left: 200px; }
+
+.history-container {
+  padding-bottom: 50px;
+  text-align: justify; }
+
+.our-dogs-image {
+  width: 200px;
+  height: 140px;
+  display: table-row; }
+
+.our-dogs-paragraph {
+  margin-top: 10px; }
+
+.contacts-table tr td {
+  width: 150px; }

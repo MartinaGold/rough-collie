@@ -1,0 +1,19 @@
+.messages-container {
+
+	.messages-text {
+		margin-top: 20px;
+		border-top: 1px solid #cecbcb;
+		width: 500px;	
+	}
+
+	.messages-input-container {
+		input {
+			width: 300px;
+		}
+		textarea {
+			width: 300px !important;
+			height: 150px;
+			margin-top: 10px;
+		}		
+	}
+}

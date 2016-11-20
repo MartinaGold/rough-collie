@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MainApplication">
+<head>
+    <meta charset="UTF-8">
+    <title>Kolie dlouhosrstá</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/angular-material/angular-material.css">
+</head>
+<body ng-controller="Main">
+    <h3 class="title"><a href="#/" ng-click="resetMenuItems()">Chovatelská stanice Golden Rose</a></h3>
+    <br />
+   
+    <div id="root-container">
+        <nav>
+            <ul class="menu">
+                <li ng-repeat="item in menuItems" ng-click="selectMenuItem(item)" ng-class="{'selected': item.selected, 'not-selected': !item.selected}">
+                    <a href="{{item.linkSource}}">{{item.name}}</a>
+                </li>
+            </ul>
+            
+        </nav>
+
+        
+        <div ng-view class="view-container"></div>
+    </div>
+    <div class="clear"></div>
+
+    <footer id="footer">
+        Vytvořil &copy;MG 2016 
+    </footer>
+    
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
+    <script src="app/app.js"></script>
+    <script src="app/main.js"></script>
+    <script src="app/routes/home/home.controller.js"></script>
+    <script src="app/routes/news/news.controller.js"></script>
+    <script src="app/routes/introduction/introduction.controller.js"></script>
+    <script src="app/routes/standard/standard.cotroller.js"></script>
+    <script src="app/routes/history/history.controller.js"></script>
+    <script src="app/routes/our-dogs/our-dogs.controller.js"></script>
+    <script src="app/routes/our-dogs/lilian/lilian.controller.js"></script>
+    <script src="app/routes/our-dogs/barma/barma.controller.js"></script>
+    <script src="app/routes/our-dogs/panama/panama.controller.js"></script>
+    <script src="app/routes/our-dogs/nia/nia.controller.js"></script>
+    <script src="app/routes/messages/messages.controller.js"></script>
+    <script src="app/routes/contacts/contacts.controller.js"></script>
+    <script src="app/routes/our-dogs/dog.directive.js"></script>
+    <script src="app/routes/messages/message.service.js"></script>
+    <script src="node_modules/angular-material/angular-material.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,145 @@
+@import "../app/routes/messages/messages.scss";
+@import "../app/routes/our-dogs/dog.directive.scss";
+
+$hover-color: #cae7e4;
+$background-secondary-color: #4A4A4A;
+
+@mixin background-and-width-transition($seconds){
+	transition: background-color $seconds ease, width $seconds;
+	-moz-transition: background-color $seconds ease, width $seconds;
+    -webkit-transition: background-color $seconds ease, width $seconds;
+    -o-transition: background-color $seconds ease, width $seconds;
+}
+
+@mixin color-transition($seconds){
+	transition: color $seconds;
+	-moz-transition: color $seconds;
+	-webkit-transition: color $seconds;
+	-o-transition: color $seconds;
+}
+
+body {
+	min-height: 100%;
+}
+
+.selected {
+	background-color: $hover-color;
+	width: 140px !important;
+
+} 
+
+.not-selected {
+	background-color: #F9F9F9;
+}
+
+.menu {
+	list-style-type: none;
+	font-size: 20px;
+	float: left;
+	li {
+		width: 125px;
+		margin: 7px;
+		box-shadow: 2px 2px 2px grey;
+		@include background-and-width-transition(0.5s);
+		&:hover{
+			background-color: #cae7e4;
+			width: 140px;
+		}
+		a {
+			@include color-transition(0.5s);
+			color: #504C4C;
+			padding: 0 11px 0 23px;
+		    height: 30px;
+		    line-height: 30px;
+		    display: block;
+		    &:focus, &:hover {
+				text-decoration: none;
+				color: black;
+			}
+		}
+	}
+}
+
+.title {
+	font-family: Times-New-Roman, Times, serif;
+	background-color: $background-secondary-color;
+	margin-top: 0px;
+	color: whitesmoke;
+	padding: 6px;
+	padding-left: 48px;
+	a {
+		color: white;
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+	}
+}
+
+#root-container {
+	width: 960px;
+	min-height: 525px;
+}
+
+.clear {
+	clear: both;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0px;
+    width: 100%;
+	background-color: $background-secondary-color;
+	color: white;
+	padding: 5px 5px 5px 20px;
+}
+
+.title-home {
+	text-align: center;
+	font-family: Garamond, Times, serif;
+}
+.title-global {
+	font-style: italic;
+	font-size: 20px;
+}
+
+.margin-top {
+	margin-top: 7px;
+}
+
+textarea {
+    width: 300px;
+    height: 150px;
+}
+
+.standard-hover:hover{
+	color: $hover-color;
+}
+
+.view-container {
+	margin-left: 200px;
+
+}
+
+.history-container {
+	padding-bottom: 50px;
+	text-align: justify;
+}
+
+.our-dogs-image {
+	width: 200px;
+	height: 140px;
+	display: table-row;
+}
+
+.our-dogs-paragraph {
+	margin-top: 10px;
+}
+
+.contacts-table tr td {
+	width: 150px;
+}
+
+
+
+
+
