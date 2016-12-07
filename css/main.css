@@ -69,7 +69,7 @@ body {
     .title a:hover, .title a:focus {
       text-decoration: none; }
 
-#root-container {
+#menu-container {
   width: 960px;
   min-height: 525px; }
 

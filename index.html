@@ -8,27 +8,9 @@
     <link rel="stylesheet" type="text/css" href="node_modules/angular-material/angular-material.css">
 </head>
 <body ng-controller="Main">
-    <h3 class="title"><a href="#/" ng-click="resetMenuItems()">Chovatelská stanice Golden Rose</a></h3>
-    <br />
-   
-    <div id="root-container">
-        <nav>
-            <ul class="menu">
-                <li ng-repeat="item in menuItems" ng-click="selectMenuItem(item)" ng-class="{'selected': item.selected, 'not-selected': !item.selected}">
-                    <a href="{{item.linkSource}}">{{item.name}}</a>
-                </li>
-            </ul>
-            
-        </nav>
 
-        
-        <div ng-view class="view-container"></div>
-    </div>
-    <div class="clear"></div>
-
-    <footer id="footer">
-        Vytvořil &copy;MG 2016 
-    </footer>
+    <menu-directive></menu-directive>
+    
     
 
     <script src="node_modules/angular/angular.js"></script>
@@ -53,6 +35,7 @@
     <script src="node_modules/angular-material/angular-material.js"></script>
     <script src="node_modules/angular-animate/angular-animate.js"></script>
     <script src="node_modules/angular-aria/angular-aria.js"></script>
+    <script src="app/menu/MenuDirective.js"></script>
     
 </body>
 </html>

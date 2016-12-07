@@ -1,0 +1,20 @@
+<h3 class="title"><a href="#/" ng-click="resetMenuItems()">Chovatelská stanice Golden Rose</a></h3>
+
+<div id="menu-container">
+    <nav>
+        <ul class="menu">
+            <li ng-repeat="item in menuItems" ng-click="selectMenuItem(item)" ng-class="{'selected': item.selected, 'not-selected': !item.selected}">
+                <a href="{{item.linkSource}}">{{item.name}}</a>
+            </li>
+        </ul>
+        
+    </nav>
+
+    
+    <div ng-view class="view-container"></div>
+</div>
+<div class="clear"></div>
+
+<footer id="footer">
+    Vytvořil &copy;MG 2016 
+</footer>
